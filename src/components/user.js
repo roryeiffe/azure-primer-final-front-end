@@ -23,11 +23,11 @@ const User = () => {
         .catch(error => setUser({...user, name: 'No user found', email: ''}));
     }
 
-    useEffect(() => {
-        axios.get('https://rory2.azurewebsites.net/users/1')
-        .then(response => console.log(response.data))
-        .catch(error => console.error(error));
-    })
+    // useEffect(() => {
+    //     axios.get('https://rory2.azurewebsites.net/users/1')
+    //     .then(response => console.log(response.data))
+    //     .catch(error => console.error(error));
+    // })
 
     return (
         <div>
